@@ -13,7 +13,7 @@
       overflow-x: hidden;
     }
 
-    /* --- FOTOS NO FUNDO --- */
+    /* --- FOTOS DECORADAS NO FUNDO --- */
     .bg-foto {
       position: absolute;
       width: 220px; 
@@ -30,7 +30,7 @@
     .f3 { top: 60vh; left: 8%; transform: rotate(8deg); }
     .f4 { top: 85vh; right: 10%; transform: rotate(-12deg); }
 
-    /* --- CHUVA SEM TREMEDEIRA --- */
+    /* --- CHUVA DE CORAÇÕES SEM TREMEDEIRA --- */
     .heart-rain {
       position: fixed;
       top: -10%;
@@ -45,7 +45,7 @@
       background: #4da3ff;
       transform: rotate(45deg);
       opacity: 0;
-      /* queda suave */
+      /* Movimento de queda suave */
       animation: fall linear forwards;
     }
     .heart-particle::before, .heart-particle::after {
@@ -63,7 +63,7 @@
       100% { transform: translateY(110vh) rotate(405deg); opacity: 0; }
     }
 
-    /* --- ESTILO DO SECTIONS --- */
+    /* --- ESTILO DOS SECTIONS --- */
     header {
       text-align: center;
       padding: 60px 20px;
@@ -217,7 +217,7 @@
       
       container.appendChild(heart);
       
-      // Remove coração após queda
+      // Remove o coração após a queda
       setTimeout(() => { heart.remove(); }, fallDuration * 1000);
     }
 
@@ -230,7 +230,7 @@
       vinil.style.display = 'block';
       audio.play();
 
-      // Cria corações em intervalos ligeiramente variados/não amontoar
+      // Cria corações em intervalos ligeiramente variados para não amontoar
       setInterval(createHeart, 300);
 
       setTimeout(() => {
